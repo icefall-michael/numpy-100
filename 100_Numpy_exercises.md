@@ -13,18 +13,26 @@ free to open an issue at <https://github.com/rougier/numpy-100>.
 File automatically generated. See the documentation to update questions/answers/hints programmatically.
 
 #### 1. Import the numpy package under the name `np` (★☆☆)
+import numpy as np
 
 #### 2. Print the numpy version and the configuration (★☆☆)
+print(np.__version__)
 
 #### 3. Create a null vector of size 10 (★☆☆)
+np.arange(10)
 
 #### 4. How to find the memory size of any array (★☆☆)
+arr.size
 
 #### 5. How to get the documentation of the numpy add function from the command line? (★☆☆)
 
+
 #### 6. Create a null vector of size 10 but the fifth value which is 1 (★☆☆)
+a = np.zeros(10)
+a[4] = 1
 
 #### 7. Create a vector with values ranging from 10 to 49 (★☆☆)
+np.arange(10, 49)
 
 #### 8. Reverse a vector (first element becomes last) (★☆☆)
 
