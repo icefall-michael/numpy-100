@@ -19,10 +19,10 @@ import numpy as np
 print(np.__version__)
 
 #### 3. Create a null vector of size 10 (★☆☆)
-np.arange(10)
+np.zeros(10)
 
 #### 4. How to find the memory size of any array (★☆☆)
-arr.size
+arr.size*arr.itmesize
 
 #### 5. How to get the documentation of the numpy add function from the command line? (★☆☆)
 
@@ -32,15 +32,22 @@ a = np.zeros(10)
 a[4] = 1
 
 #### 7. Create a vector with values ranging from 10 to 49 (★☆☆)
-np.arange(10, 49)
+np.arange(10, 50)
 
 #### 8. Reverse a vector (first element becomes last) (★☆☆)
+a = np.arange(10)
+a = a[::-1]
 
 #### 9. Create a 3x3 matrix with values ranging from 0 to 8 (★☆☆)
+a = np.arange(9).reshape(3,3)
+
 
 #### 10. Find indices of non-zero elements from [1,2,0,0,4,0] (★☆☆)
+a = np.nonzero([1,2,0,0,4,0])
+
 
 #### 11. Create a 3x3 identity matrix (★☆☆)
+np.eye(3)
 
 #### 12. Create a 3x3x3 array with random values (★☆☆)
 
