@@ -65,10 +65,14 @@ np.random.mean()
 
 
 #### 15. Create a 2d array with 1 on the border and 0 inside (★☆☆)
+a = np.ones((5,5))
+a[[1:-1], [1:-1]] = 0
+
+
+#### 16. How to add a border (filled with 0's) around an existing array? (★
 
 
 
-#### 16. How to add a border (filled with 0's) around an existing array? (★☆☆)
 
 #### 17. What is the result of the following expression? (★☆☆)
 ```python
