@@ -50,12 +50,23 @@ a = np.nonzero([1,2,0,0,4,0])
 np.eye(3)
 
 #### 12. Create a 3x3x3 array with random values (★☆☆)
+a = [random.random()for i in range(9)]
+np.array(a).reshape(3,3,3)
 
 #### 13. Create a 10x10 array with random values and find the minimum and maximum values (★☆☆)
+a = [random.random()for i in range(100)]
+b = np.array(a).reshape(10,10)
+b.min()
+b.max()
+
 
 #### 14. Create a random vector of size 30 and find the mean value (★☆☆)
+np.random.mean()
+
 
 #### 15. Create a 2d array with 1 on the border and 0 inside (★☆☆)
+
+
 
 #### 16. How to add a border (filled with 0's) around an existing array? (★☆☆)
 
@@ -70,6 +81,7 @@ np.nan in set([np.nan])
 ```
 
 #### 18. Create a 5x5 matrix with values 1,2,3,4 just below the diagonal (★☆☆)
+
 
 #### 19. Create a 8x8 matrix and fill it with a checkerboard pattern (★☆☆)
 
