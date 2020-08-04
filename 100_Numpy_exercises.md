@@ -70,7 +70,8 @@ a[[1:-1], [1:-1]] = 0
 
 
 #### 16. How to add a border (filled with 0's) around an existing array? (★
-
+a = np.ones((5,5))
+a[1:-1, 1:-1] = 0
 
 
 
