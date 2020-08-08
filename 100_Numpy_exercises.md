@@ -77,12 +77,12 @@ a[1:-1, 1:-1] = 0
 
 #### 17. What is the result of the following expression? (★☆☆)
 ```python
-0 * np.nan
-np.nan == np.nan
-np.inf > np.nan
-np.nan - np.nan
-np.nan in set([np.nan])
-0.3 == 3 * 0.1
+0 * np.nan  nan
+np.nan == np.nan False
+np.inf > np.nan  False
+np.nan - np.nan  nan
+np.nan in set([np.nan]) nan
+0.3 == 3 * 0.1   False
 ```
 
 #### 18. Create a 5x5 matrix with values 1,2,3,4 just below the diagonal (★☆☆)
