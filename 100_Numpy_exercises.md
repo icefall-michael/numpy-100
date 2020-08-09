@@ -87,12 +87,37 @@ np.nan in set([np.nan]) nan
 
 #### 18. Create a 5x5 matrix with values 1,2,3,4 just below the diagonal (★☆☆)
 
+a = np.zeros((5,5))
+for i in range(4):
+  a[i+1,i]=i+1
+
 
 #### 19. Create a 8x8 matrix and fill it with a checkerboard pattern (★☆☆)
 
+a = np.zeros((8,8))
+for i in range(8):
+	for j in range(8):
+		if (i+j)%2 == 0:
+			a[i,j] = 1
+
+
 #### 20. Consider a (6,7,8) shape array, what is the index (x,y,z) of the 100th element?
 
+(2,1,2) 
+
+give a (a, b, c) shape array, what is the index (x,y,z) of the Ath element
+
+if A >= a*b*c:
+	print("index is out of bounds")
+else:
+	z = A//(a * b)
+	x = A%(a * b)//b
+	y = A%(a * b)%b - 1
+
+
 #### 21. Create a checkerboard 8x8 matrix using the tile function (★☆☆)
+
+
 
 #### 22. Normalize a 5x5 random matrix (★☆☆)
 
