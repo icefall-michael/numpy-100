@@ -117,9 +117,16 @@ else:
 
 #### 21. Create a checkerboard 8x8 matrix using the tile function (★☆☆)
 
+a = np.array([[1,0],[0,1])
+b = np.tile(a, (4,4))
 
 
 #### 22. Normalize a 5x5 random matrix (★☆☆)
+
+a = [random.randint(0, 100) for i in range(25)]
+b = np.array(a).reshape((5,5))
+
+
 
 #### 23. Create a custom dtype that describes a color as four unsigned bytes (RGBA) (★☆☆)
 
