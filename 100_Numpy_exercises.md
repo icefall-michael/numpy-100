@@ -125,22 +125,31 @@ b = np.tile(a, (4,4))
 
 a = [random.randint(0, 100) for i in range(25)]
 b = np.array(a).reshape((5,5))
-
+(b-b.mean())/b.std()
 
 
 #### 23. Create a custom dtype that describes a color as four unsigned bytes (RGBA) (★☆☆)
 
+
+
+
 #### 24. Multiply a 5x3 matrix by a 3x2 matrix (real matrix product) (★☆☆)
 
+a = np.ones((5,3)) b = np.ones((3,2))
+Z = np.dot(a,b)
+
+
 #### 25. Given a 1D array, negate all elements which are between 3 and 8, in place. (★☆☆)
+
+
 
 #### 26. What is the output of the following script? (★☆☆)
 ```python
 # Author: Jake VanderPlas
 
-print(sum(range(5),-1))
+print(sum(range(5),-1))  9
 from numpy import *
-print(sum(range(5),-1))
+print(sum(range(5),-1))  9
 ```
 
 #### 27. Consider an integer vector Z, which of these expressions are legal? (★☆☆)
