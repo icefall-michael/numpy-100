@@ -141,7 +141,8 @@ Z = np.dot(a,b)
 
 #### 25. Given a 1D array, negate all elements which are between 3 and 8, in place. (★☆☆)
 
-
+z = np.arange(10)
+z[(z>3)&(z<8)] *= -1
 
 #### 26. What is the output of the following script? (★☆☆)
 ```python
@@ -171,18 +172,37 @@ np.array([np.nan]).astype(int).astype(float)
 
 #### 29. How to round away from zero a float array ? (★☆☆)
 
+Z = np.random.uniform(-10,+10,10)
+print(np.copysign(np.ceil(np.abs(Z)), Z))
+
 #### 30. How to find common values between two arrays? (★☆☆)
 
+np.intersect1d(a, b)
+
 #### 31. How to ignore all numpy warnings (not recommended)? (★☆☆)
+
+np.seterr(all='ignore')
+
 
 #### 32. Is the following expressions true? (★☆☆)
 ```python
 np.sqrt(-1) == np.emath.sqrt(-1)
 ```
+np.sqrt(-1) = nan
+np.emath.sqrt(-1) = 1j 复数 
+
 
 #### 33. How to get the dates of yesterday, today and tomorrow? (★☆☆)
 
+datetime64 and timedelta64
+today: np.datetime64("today")
+yesterday: np.datetime64("today") - np.timedelta64(1,"D")
+tomorrow: np.datetime64("today") + np.timedelta64(1,"D")
+
+
 #### 34. How to get all the dates corresponding to the month of July 2016? (★★☆)
+
+
 
 #### 35. How to compute ((A+B)*(-A/2)) in place (without copy)? (★★☆)
 
