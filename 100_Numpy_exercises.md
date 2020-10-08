@@ -212,17 +212,49 @@ add divide negative multiply
 
 #### 37. Create a 5x5 matrix with row values ranging from 0 to 4 (★★☆)
 
+```python
+np.zeros((5,5)) + np.arange(5)
+```
+
 #### 38. Consider a generator function that generates 10 integers and use it to build an array (★☆☆)
+
+```python
+def generate():
+	for x in range(10):
+		yield x
+np.fromiter(generate(),dtype=int)
+```
 
 #### 39. Create a vector of size 10 with values ranging from 0 to 1, both excluded (★★☆)
 
+```python
+np.linspace(0,1,11,endpoint=False)[1:] # endpoint去尾端，切片去首端
+np.linspace(0,1,12)[1:-1]      #也可首尾都切片
+```
+
 #### 40. Create a random vector of size 10 and sort it (★★☆)
 
+```python
+z = np.random.random(10)
+z.sort()
+```
+
 #### 41. How to sum a small array faster than np.sum? (★★☆)
+```python
+np.add.reduce()       #add.reduce()在数量小的时候速度比sum快几倍
+```
 
 #### 42. Consider two random array A and B, check if they are equal (★★☆)
 
+```python
+```
+
 #### 43. Make an array immutable (read-only) (★★☆)
+
+```python
+Z = np.zeros((5,5))
+Z.flags.writeable = False
+```
 
 #### 44. Consider a random 10x2 matrix representing cartesian coordinates, convert them to polar coordinates (★★☆)
 
