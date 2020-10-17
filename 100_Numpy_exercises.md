@@ -258,17 +258,50 @@ Z.flags.writeable = False
 
 #### 44. Consider a random 10x2 matrix representing cartesian coordinates, convert them to polar coordinates (★★☆)
 
+```python
+z = np.arange(20)
+X,Y = z[:,0], z[1:0]
+R = np.sqrt(X**2 + Y**2)
+T = np.arctan2(X,Y)
+```
+
 #### 45. Create random vector of size 10 and replace the maximum value by 0 (★★☆)
+
+```python
+z = np.arange(10)
+z[z.argmax()] = 0
+```
 
 #### 46. Create a structured array with `x` and `y` coordinates covering the [0,1]x[0,1] area (★★☆)
 
+```python
+X = np.linspace(0,1,5)
+Y = np.linspace(0,1,5)
+XV, YV = np.meshgrid(X, Y)
+```
 #### 47. Given two arrays, X and Y, construct the Cauchy matrix C (Cij =1/(xi - yj))
+
+```python
+xi-yj = np.subtract.outer(x, y)
+```
 
 #### 48. Print the minimum and maximum representable value for each numpy scalar type (★★☆)
 
+```python
+np.iinfo(np.int32).min
+np.iinfo(np.int32).max
+```
+
 #### 49. How to print all the values of an array? (★★☆)
 
+```python
+set_printoptions
+```
 #### 50. How to find the closest value (to a given scalar) in a vector? (★★☆)
+
+```python
+
+```
 
 #### 51. Create a structured array representing a position (x,y) and a color (r,g,b) (★★☆)
 
