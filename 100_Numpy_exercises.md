@@ -300,14 +300,27 @@ set_printoptions
 #### 50. How to find the closest value (to a given scalar) in a vector? (★★☆)
 
 ```python
-
+z = np.arange(1000)  #定义一个数组
+y = np.random.uniform(0,100)   #随机取一个数,float类型
+Z = np.abs(z-y)   #数组中各数与随机数差值的绝对值
+t = Z.argmin(Z)   #Z中最小的数就是与给定数最接近的数  返回的是索引
 ```
 
 #### 51. Create a structured array representing a position (x,y) and a color (r,g,b) (★★☆)
 
 #### 52. Consider a random vector with shape (100,2) representing coordinates, find point by point distances (★★☆)
 
+```python
+z = np.arange(200).reshaep((100,2))
+
+
+```
+
 #### 53. How to convert a float (32 bits) array into an integer (32 bits) in place?
+
+```python
+
+```
 
 #### 54. How to read the following file? (★★☆)
 ```
@@ -316,7 +329,15 @@ set_printoptions
  ,  , 9,10,11
 ```
 
+```python
+
+```
+
 #### 55. What is the equivalent of enumerate for numpy arrays? (★★☆)
+
+```python
+
+```
 
 #### 56. Generate a generic 2D Gaussian-like array (★★☆)
 
